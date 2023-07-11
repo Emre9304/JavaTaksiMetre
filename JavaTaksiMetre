@@ -1,0 +1,15 @@
+package giris;
+import java.util.Scanner;
+public class class3 {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        int acilisUcret = 10;
+        System.out.println("Kaç Km gidildi ? ");
+        int gidilenKm = input.nextInt();
+        double taksiMetre = gidilenKm * 2.20;
+        double ucret = acilisUcret + taksiMetre;
+        double odemeTutari = ucret<20 ? 20 : ucret;
+        System.out.println(odemeTutari);
+
+    }
+}
